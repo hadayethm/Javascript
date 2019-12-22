@@ -1,0 +1,20 @@
+#top-bar{
+		background: #828282;
+	}
+.heading{
+	text-align: center;
+	color: #fff;
+}
+#footer{
+	background: #828282;
+}
+.footer-heading{
+	text-align: center;
+}
+.footer-heading p{
+	color: #fff;
+}
+#body-content{
+	background: #efefef;
+  padding: 100px 0;
+}

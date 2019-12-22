@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	<header id="top-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading">
+						<h2>Header Javascript</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="body-content" class="text-center">
+		<div class="javascript">
+			<h2>JavaScript Output</h2>
+		</div>
+		<div class="first pt-5">
+			<h2>First Javascript document.getElementById()</h2>
+			<script>
+				//document.getElementById("demo").innerHTML = "hello";
+//				function mymane(){
+//					document.getElementById("demo").innerHTML = "hello";	
+//				};
+			</script>
+			<p id="demo" >World</p>
+			<button type="button" onclick="document.getElementById('demo').innerHTML ='Hadayet'">Try It</button>
+		</div>
+		<div class="secend">
+			<h2>First Javascript document.write()</h2>
+			<script>
+				document.write('Hadayet');
+			</script>
+			<script>
+				function onalart(){
+				  document.write("Ali");
+				}
+			</script>
+			<button type="button" onclick="onalart()">Try It</button>
+		</div>
+		<div class="three">
+			<h2>First Javascript window.alert()</h2>
+			<script>
+				function alertlk(){
+					alert("Message Show");	
+				};
+			</script>
+			<button type="button" onclick="alertlk()">Try It</button>
+		</div>
+		<div class="three">
+			<h2>First Javascript consol.log()</h2>
+			<script>
+				console.log("Hadayet");
+			</script>
+			<p>console.log("Hadayet");</p>
+		</div>
+		<div class="javascript">
+			<h2>JavaScript  Statements</h2>
+		</div>
+		<div class="first pt-5">
+		<p id="vvvo"></p>
+			<script>
+				var x, y, z;
+				x = 10;
+				y = 15;
+				z = x + y;
+				document.getElementById("vvvo").innerHTML = "This Value is" + "" + z;
+			</script>
+			
+		</div>
+		<div class="javascript">
+			<h2>JavaScript  Syntax</h2>
+		</div>
+		<div class="first pt-5">
+			
+			<p id="bbb"></p>
+			<script>
+			    var x = mysal(10,60);
+				document.getElementById("bbb").innerHTML = x;
+				function mysal(a, b){
+					return a + b;
+				}
+			</script>
+		</div>
+		<div class="javascript">
+			<h2>JavaScript  Loop</h2>
+		</div>
+		<div class="first pt-5">
+			
+			<p id="loop"></p>
+			<p id="loop2"></p>
+			
+			<script>
+			    var des, text, dlen, i;
+				des = ["name", "roll", "age"]
+				dlen = des.length;
+				document.getElementById("loop2").innerHTML = des.length;
+				text ="<ul>";
+				for (i = 0; i < dlen; i++){
+					text += "<li>" + des[i] + "</li>"
+				}
+				text += "</ul>"
+				document.getElementById("loop").innerHTML = text;
+				
+			</script>
+			
+			<script>
+				//var fruits, text, fLen, i;
+				//fruits = ["Banana", "Orange", "Apple", "Mango"];
+				//fLen = fruits.length;
+				//document.getElementById("loop2").innerHTML =  fruits.length;
+				
+				//text = "<ul>";
+				//for (i = 0; i < fLen; i++) {
+					//text += "<li>" + fruits[i] + "</li>";
+				}
+				//text += "</ul>";
+
+				//document.getElementById("loop").innerHTML = text;
+			</script>
+			
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="footer-heading">
+			<p>©Copyright By Hadaye 2020</p>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
